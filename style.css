@@ -1,0 +1,584 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#top{    
+    color: #444444;
+    position: fixed;
+    top:85%;
+    right: 30px;
+    font-size: 1.5rem;
+    padding: 20px 15px;
+}
+#top a{
+    background-color: #ec523f;
+    padding: 20px 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+a,h1,h2,h3{
+    color: #444444;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/*---------------- First Box (Home) Start-------------------*/
+.home{
+    background: url("./images/home.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-basis:100vw;
+    box-sizing: border-box;
+    height: 100vh;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.top-header{
+    display: flex;
+    flex-direction: row;
+    flex:100%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.top-header .fa{
+    padding: 12px;
+    margin: 3px 4px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50px;
+    background: white;
+    color: #444444;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+}
+
+
+.middle-header{
+    flex: 100%;
+    margin-top: 1%;
+    justify-content: center;
+    display: flex;
+    
+}
+.middle-header-wrapper{
+    background-color: white;
+    flex-basis: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo-wrapper{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items:center;
+}
+.logo-wrapper img{
+    max-height: 100%;
+}
+
+.logo-wrapper a{
+    margin-left: 3%;
+    color: #ec523f;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.menu-wrapper{
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-wrapper li{
+    list-style: none;
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+    height: 100%; 
+    padding:0% 4%;
+}
+.menu-wrapper li a{
+    line-height: 95px;
+    color: #444444;
+    text-transform: uppercase;
+    padding-top: 33px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+.menu-wrapper li a:hover{
+    color: #ec523f;
+    border-top: 3px solid #ec523f;
+}
+.bottom-header{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    
+}
+.bottom-header-wrapper{
+    display: flex;
+    flex-basis: 75%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+}
+.bottom-header-wrapper h1{
+    color: white; 
+    font-weight: bolder;
+    font-size: 2.5rem;
+    border-bottom: 2px solid white;
+    padding: 5px 0px;
+    margin: 10px 0px;
+}
+.bottom-header-wrapper h2{
+    color: white;
+    margin: 10px 0px;
+}
+.bottom-header-wrapper button{
+    background-color: #ec523f;
+    color: white;
+    margin: 10px 0px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 150px;
+    line-height: 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+/*---------------- First Box (Home) End-------------------*/
+
+
+/*---------------- Second Box (Section) Start --------------*/
+
+.services{
+    flex:100%;
+    display: flex;
+    justify-content: center;   
+    margin-bottom: 10%;
+}
+.services-container{
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+}
+.services-header-wrapper{
+    flex-basis:100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-header{ 
+    flex-basis: 30%;
+    line-height: 40px;
+    text-align: center;
+    color:#444444;
+}
+.services-header h1{
+    border-bottom: 2px solid #444444;
+}
+.services-header h2{
+    font-size: small;
+    font-weight: 500;
+}
+.services-container .fa{
+    border-radius: 0px;
+    padding: 120px 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 50px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+.services-col-1{
+    flex-basis: 23%;
+}
+.services-col-2{
+    flex-basis: 23%;
+}
+.services-col-3{
+    flex-basis: 23%;
+}
+.services-col-4{
+    flex-basis: 23%;
+}
+/*---------------- Second Box (Section) End --------------*/
+
+/*---------------- Third Box (Portfolio) Start --------------*/
+
+.portfolio{
+    flex:100%;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-container{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+}
+.portfolio-header-row-1{
+    flex-basis:100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.portfolio-header-col-1{ 
+    flex-basis: 30%;
+    line-height: 40px;
+    text-align: center;
+    color:#444444;
+}
+.portfolio-header-col-1 h1{
+    border-bottom: 2px solid #444444;
+}
+.portfolio-header h2{
+    font-size: small;
+    font-weight: 500;
+}
+.portfolio-header-row-2{
+    flex:100%;
+    display: flex;
+}
+.portfolio-header-col-2{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;
+    justify-content: center;
+}   
+.portfolio-header-col-2 > img{
+    flex-basis: 20%;
+    height: 200px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+/*---------------- Third Box (Portfolio) End --------------*/
+
+/*---------------- Fourth Box (Team) Start --------------*/
+.team{
+    flex:100%;
+    display: flex;
+    justify-content: center;
+}
+.team-container{
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+}
+.team-header-row-1{
+    flex-basis:100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team-header{ 
+    flex-basis: 30%;
+    line-height: 40px;
+    text-align: center;
+    color:#444444;
+}
+.team-header h1{
+    border-bottom: 2px solid #444444;
+}
+.team-header h2{
+    font-size: small;
+    font-weight: 500;
+}
+.team-header-row-2{
+    flex:100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-header-row-2 img{
+    flex-basis: 10vw;
+    height: 25vh;
+    margin: 20px 0px 20px 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team-header-row-3{
+    margin-top: 40px;;
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-header-row-3 h2,h3,p{
+    text-align: center;
+    line-height: 25px;
+    color: #444444;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+/*---------------- Fourth Box (Team) End --------------*/
+
+/*---------------- Fifth Box (Contact) Start --------------*/
+.contact{
+    flex:100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-container{
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+}
+.contact-header-row-1{
+    flex-basis:100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-header{ 
+    flex-basis: 30%;
+    line-height: 40px;
+    text-align: center;
+    color:#444444;
+}
+.contact-header h1{
+    border-bottom: 2px solid #444444;
+}
+.contact-header h2{
+    font-size: small;
+    font-weight: 500;
+}
+.contact-header-row-2{
+    
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-header-row-2 p{
+    text-align: justify;
+    line-height: 25px;
+    color: #444444;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.contact-header-row-2-inner-1{
+    flex: 2;
+}
+.contact-header-row-2-inner-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-header-row-2-inner-2 input,textarea, button{
+    line-height: 40px;
+    border-color: 1px #444444;
+}
+/*---------------- Fifth Box (Contact) End --------------*/
+
+/*---------------- Sixth Box (Footer) Start --------------*/
+.footer{
+    display: flex;
+    flex:100%;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+}
+.footer-container
+{
+    flex-basis: 75%;
+    line-height: 30px;
+    color: #444444;
+}
+/*---------------- Sixth Box (Footer) End --------------*/
+
+/*---------------- Responsive Page CSS Start --------------*/
+
+
+@media (max-width:1200px){
+    
+    .top-header .fa{
+        padding: 10px;
+        font-size: 0.7rem;
+        width: 30px;
+        height: 30px;
+    }
+    .logo-wrapper a{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .menu-wrapper li a{
+        font-size: 1rem;
+    }
+    .team-header-row-2 img{
+        flex-basis: 9vw;
+        height: 23vh;
+        margin: 20px 0px 20px 8px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:991px){
+    .middle-header{
+        height: 10vh;
+    }
+    .menu-wrapper li a{
+        line-height: 70px;
+        padding-top: 20px;
+    }
+    .bottom-header-wrapper > h1{
+        font-size: 2rem;
+    }
+    .portfolio-container, .services-container, .team-container, .contact-container, .footer-container{
+        flex-basis: 90%;
+        align-content: center;
+    }
+    .services-col-1{
+        flex-basis: 47%;
+    }
+    .services-col-2{
+        flex-basis: 47%;
+    }
+    .services-col-3{
+        flex-basis: 47%;
+    
+    }
+    .services-col-4{
+        flex-basis: 47%;
+    }
+    .portfolio-header-col-2 img{
+       flex-basis: 45%;
+       height: 340px;
+    } 
+    .team-header-row-2 img{
+        flex-basis: 100px;
+        height: 50vh;
+        margin: 18px 0px 20px 2px;
+        object-fit: cover;
+        border-radius: 50%;
+    }  
+}
+@media (max-width:767px){
+    .header{
+        height: 100vh;
+    }
+    .top-header{
+        height: 10vh;
+    }
+    .middle-header{
+        height: 30vh;
+    }
+    .middle-header-wrapper{
+        flex-basis: 70%;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .logo-wrapper{
+        max-height: 30%;
+        justify-content: center;
+    }
+    .logo-wrapper img{
+        object-fit: cover;
+        height: 100vh;
+    }
+    .logo-wrapper a{
+        background-color: white;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 15px ;
+    }
+
+    .menu-wrapper{
+        max-height: 30%;
+        width: 60%;
+        flex-shrink: 1;
+        justify-content: center;
+        flex: 1;
+    }
+    .menu-wrapper li{
+        width: 70%;
+    }
+    .menu-wrapper li a{
+        line-height: 60px;
+        padding-top: 19px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .bottom-header{
+        height: 40vh;
+        align-content: center;
+        align-self: flex-end;
+    }
+    .bottom-header-wrapper > h1{
+        font-size: 2rem;
+    }
+    .services-col-1{
+        flex-basis: 100%;
+    }
+    .services-col-2{
+        flex-basis: 100%;
+    }
+    .services-col-3{
+        flex-basis: 100%;
+    
+    }
+    .services-col-4{
+        flex-basis: 100%;
+    }
+    .portfolio-header-col-2 img{
+       flex-basis: 100%;
+       height: 350px;
+    } 
+    .team-header-row-2 img{
+        flex-basis: 70vw;
+        height: 50vh;
+        margin-left:2px;
+        border-radius: 50%;
+    }  
+    .contact-header-row-2{
+        flex-direction: column;
+        
+    }
+    .footer{
+        min-height: 50px;
+        align-items:center ;
+    }
+}
+/*---------------- Responsive Page CSS End --------------*/
