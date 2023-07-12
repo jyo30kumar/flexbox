@@ -59,8 +59,10 @@
         justify-content: center;
     }
     .menu-wrapper li a{
-        line-height: 60px;
-        padding-top: 15px;
+        line-height: 40px;
+        padding-top: 10px;
+        font-size: 0.7rem;
+
     }
     .top-header .fa{
         padding: 10px;
