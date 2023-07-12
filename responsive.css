@@ -59,10 +59,8 @@
         justify-content: center;
     }
     .menu-wrapper li a{
-        line-height: 40px;
-        padding-top: 10px;
-        font-size: 0.7rem;
-
+        line-height: 60px;
+        padding-top: 15px;
     }
     .top-header .fa{
         padding: 10px;
@@ -97,6 +95,12 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+    }
+@media (max-width:500px){
+    .menu-wrapper li a{
+        font-size: 0.9rem;
+        line-height: 50px;
+    }
     }
 }
 /*---------------- Responsive Page CSS End --------------*/
